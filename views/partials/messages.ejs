@@ -1,0 +1,47 @@
+<% if(typeof errors != 'undefined') { %>
+    <% errors.forEach(function(error){ %>
+        <div class="alert" role="alert">
+            <ul>
+            <li><%= error.msg %><span class="close">&times</span></li>
+            </ul>
+        </div>
+   <% }) %>
+<% } %>
+
+<% if(success_msg != '') { %>
+    <div class="alert_success" role="alert">
+        <ul>
+            <li><%= success_msg %><span class="close">&times</span></li>
+            </ul>
+        </div>
+
+<% } %>
+
+<% if(error_msg != '') { %>
+    <div class="alert" role="alert">
+        <ul>
+            <li><%= error_msg %><span class="close">&times</span></li>
+            </ul>
+        </div>
+
+<% } %>
+
+<% if(error != '') { %>
+    <div class="alert" role="alert">
+        <ul>
+            <li><%= error %><span class="close">&times</span></li>
+            </ul>
+        </div>
+
+<% } %>
+
+<script>
+    var closebtn = document.getElementsByClassName('close');
+    var i;
+
+    for(i=0; i<closebtn.length; i++){
+        closebtn[i].addEventListener('click', function(){
+            this.parentElement.style.display = 'none';
+        });
+    }
+</script>

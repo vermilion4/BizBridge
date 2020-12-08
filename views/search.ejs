@@ -1,0 +1,35 @@
+<%- include ('partials/header') %>
+
+
+        <div class="banner4">
+                <h1>We Bring Clients & Reputable Service Providers Together</h1>
+        </div>
+
+        <div class="artisan_list">
+            <h2><%= what %> in <%= where %></h2>
+
+            <%if(record.length === 0){ %>
+                <p>No result found</p>
+            <% } else{ %>
+
+            <% record.forEach(function(records){ %>
+            <div class="logo_2">
+             <img src="data:image/<%=records.upload.contentType%>;base64,<%=records.upload.data.toString('base64')%>" 
+             width="100%" height="100%">
+            </div>
+            
+            <p>Company Name: <b><%= records.bName %></b></p>
+            <p>Contact Person: <b><%= records.cName %></b> </p>
+            <p>CAC Status: <b><%= records.cacStatus %></b></p>
+            <p>Contact Number: <b><%= records.cNumber %></b> </p>
+            <p>Contact Email: <b><%= records.email %></b></p>
+            <p>Website: <b><%= records.web %></b></p>
+            <p>Address: <b><%= records.address %></b></p>
+            <hr>
+            <% }) %>
+            <% } %>
+        </div>
+
+
+
+ <%- include ('partials/footer') %>

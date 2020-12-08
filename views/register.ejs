@@ -1,0 +1,79 @@
+<%- include ('partials/header') %>
+
+
+        <div class="banner4">
+                <h1>We Bring Clients & Reputable Service Providers Together</h1>
+        </div>
+
+<div class="artisan">
+    <span class="artisan_form">
+    <form action="/artisan/register" method="post" enctype="multipart/form-data">
+    <h1>Artisan Registration form</h1>
+    <%- include('./partials/messages') %>
+    <input type="text" placeholder="Contact Name" name="cName"/>
+      <input type="text" placeholder="Contact Phone Number" name="cNumber">
+        <input type="email" placeholder="Contact Email" name="email">
+          <input type="text" placeholder="Business Name"  name="bName">
+          <% let industry = ['AC Repair', 'Spa Services','Plumbers','Mechanics','Laundry','Information Technology','Beauty Salon','Home/Office Cleaning',
+          'Catering Services','Event Management and Planning','General Merchandise'] %>
+          <p style="margin-left:370px ;">Choose your Industry:<select name="industry"style="margin-left: 10px; margin-top: 12px;
+                                    padding-top: 5px;
+                                    padding-bottom: 2px;
+                                    padding-left: 15px;padding-right: 75px;">
+              <option>Choose Your Industry</option>
+               <% industry.forEach(function(industries){ %>
+                <option value="<%= industries %>"><%= industries %></option>
+              <% }) %>
+          </select>
+          </p>
+          <p style="margin-left: 370px; letter-spacing: 2px;">Are you registered with CAC? &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            Yes <input style="margin-left: 6px;" type="radio" value="yes" name="cacStatus">
+            No <input style="margin-left: 6px;" type="radio" value="no" name="cacStatus"></p>
+          <div>
+              <% let jtitle = ['CEO', 'Operations Manager', 'Marketing Manager', 'Sales Manager'] %>
+              <select name="title" id="" style="margin-left: 370px; margin-top: 12px;
+                                        padding-top: 5px;
+                                        padding-bottom: 2px;
+                                        padding-left: 15px;padding-right: 100px;">
+                  <option>Your Job Title</option>
+                  <% jtitle.forEach(function(jtitle){ %>
+                    <option value="<%= jtitle %>"><%= jtitle %></option>
+                  <% }) %>
+              </select>
+              <% let stren = ['1', '2-5','6-10','11-20','21-50','51 and Above'] %>
+              <select name="staffStrength" id="" style="margin-left: 10px; margin-top: 12px;
+                                        padding-top: 5px;
+                                        padding-bottom: 2px;
+                                        padding-left: 15px;padding-right: 75px;">
+                  <option>Your Staff Strength</option>
+                   <% stren.forEach(function(stren){ %>
+                    <option value="<%= stren %>"><%= stren %></option>
+                  <% }) %>
+              </select>
+          </div>
+           <% let location = ['Ikeja', 'Oke-ira','Lagos','Lekki','Epe','Ikorodu','Epe','Mushin',
+          'Yaba','Ibadan','Surulere'] %>
+                     <p style="margin-left:370px ;">City: <select name="city" style="margin-left: 10px; margin-top: 12px;
+                                    padding-top: 5px;
+                                    padding-bottom: 2px;
+                                    padding-left: 15px;padding-right: 365px;">
+                        <option>City</option>
+                        <% location.forEach(function(locations){ %>
+                      <option value="<%= locations %>"><%= locations %></option>>
+                        <% }) %> 
+                        </select> 
+                        </p>
+              <input type="text" placeholder="Contact Address" name="address">
+              <input type="text" placeholder="Website URL" name="web">
+              <input type="text" placeholder="Preferred Username" name="uname">
+              <input type="password" placeholder="Password" name="password">
+              <input type="password" placeholder="Confirm Password" name="password2">
+                        <h1>Upload company Logo</h1>
+     <input type="file" name="image" placeholder="Upload your company Logo">
+              <input type="submit" class="register_button" value="Click to Submit" name="submit">
+    </form>
+
+</span>
+</div>
+
+<%- include ('partials/footer') %>

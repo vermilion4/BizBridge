@@ -1,0 +1,22 @@
+<%- include ('partials/header') %>
+
+
+        <div class="banner4">
+                <h1>We Bring Clients & Reputable Service Providers Together</h1>
+        </div>
+
+        <div class="artisan_2">
+            <span class="artisan_form_2">
+        <form action="/artisan/login" method="post">
+         <h1>Artisan Login Page</h1>
+  
+          <%- include('./partials/messages') %>
+              <input type="text" placeholder="Enter Your Username" name="uname"/>
+                <input type="password" placeholder="Enter Your Password" name="password">
+                <input class='login_button' type="submit" value="Click to Login">
+      </form>
+      </span>
+      </div>
+
+
+ <%- include ('partials/footer') %>

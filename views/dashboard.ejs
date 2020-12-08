@@ -1,0 +1,32 @@
+<%- include ('partials/header') %>
+
+
+        <div class="banner4">
+                <h1>We Bring Clients & Reputable Service Providers Together</h1>
+        </div>
+
+<div class="dashboard">
+      
+        <h1 style="background-color: white; color: #E83E52;">Welcome <%= record.uname %></h1>
+                        <div class="logo_1">
+                                <img src="data:image/<%=record.upload.contentType%>;base64,<%=record.upload.data.toString('base64')%>"
+                                width="100%" height="100%">
+                        </div>
+
+
+            <div class="artisan_list2">
+            
+            <p>Company Name: <b><%= record.bName %></b></p>
+            <p>Contact Person: <b><%= record.cName %></b> </p>
+            <p>CAC Status: <b><%= record.cacStatus %></b></p>
+            <p>Contact Number: <b><%= record.cNumber %></b> </p>
+            <p>Contact Email: <b><%= record.email %></b></p>
+            <p>Website: <b><%= record.web %></b></p>
+            <p>Address: <b><%= record.address %></b></p>
+        
+        </div>
+        </div>
+
+
+        
+<%- include ('partials/footer') %>

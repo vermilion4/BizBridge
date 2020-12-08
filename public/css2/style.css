@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body{
+    background-color: #C9C8C8;
+}
+
+.container{
+ border:1px solid #E83E52;
+ width: 100%;
+ 
+}
+
+.header{
+    width: 100%;
+    background-color: #E83E52;
+    position: relative;
+    position: fixed;
+}
+
+.header .logo{
+    width: 89px;
+    height: 79px;
+    background: url('/images/logo.png');
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-left: 50px;
+    top: 3px;
+}
+
+.header h3{
+    color: #1F304C;
+    font-style: black;
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
+
+.header .nav{
+    overflow: hidden;
+    position: fixed;
+    right: 4%;
+    top: 2%;
+}
+
+.header .nav a{
+    color: #ffffff;
+    float: left;
+    font-family: Arial;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: block;
+    padding: 15px 20px;
+}
+
+.header .nav a:hover{
+    background-color: #FFF;
+    color: #E83E52;
+}
+
+.banner{
+    width: 100%;
+   
+    margin-top: 80px;
+
+
+}
+
+.banner1{
+    border: 1px solid #E83E52;
+    width: 80%;
+    height: 250px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+.banner1 h1{
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 50%;
+    font-family: Arial;
+}
+
+a.button{
+     text-decoration: none;
+  background-color: white; 
+  float: left;
+  color: black; 
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-family: Arial;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-top: 50px;
+ 
+}
+a.button:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.banner2{
+     width: 80%;
+    height: 100px;
+    margin-left: 20%;
+    margin-top: 1%;
+   
+}
+
+.banner2 select{
+    padding: 10px 200px 10px 20px;
+    margin-right: 10px;
+    float: left;
+}
+
+.banner2 input{
+     background-color: rgb(102, 89, 89); 
+  color:white; 
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px 30px;
+  font-family: Arial;
+  font-size: 14x;
+  right: 380px;  
+}
+.banner2 input[type=submit]:hover{
+background-color: #E83E52;
+}
+
+.banner3{
+    border: 1px solid #E83E52;
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    background-color: white;;
+}
+
+.banner3 h1{
+    padding-top: 6%;
+    font-family: Arial;
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: #E83E52;
+    color: #fff;
+    position: relative;
+}
+
+.footer p{
+    text-align: center;
+}
+
+.footer .curve{
+    position: relative;
+    margin-left: 42%;
+    margin-top: 1%;
+    padding-right: 200px;
+}
+
+.curve1{
+    border: 1 px solid black;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+   color: #3B5998;
+    position: absolute;
+}
+.curve2{
+    border: 1 px solid black;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    
+    position: absolute;
+    left: 80px;
+}
+.curve3{
+    border: 1 px solid black;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    color: green;
+    position: absolute;
+    left: 160px;
+}
+.curve4{
+    border: 1 px solid black;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    position: absolute;
+    left: 240px;
+}
+
+.banner4{
+    width: 80%;
+    height: 180px;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    background-color: white;
+}
+
+.banner4 h1, .banner5 h1{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 50%;
+    font-family: Arial;
+}
+
+.artisan, .artisan_2{
+    width: 80%;
+    height: 900px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+     border-radius: 25px;
+    background-color: #b371715d;
+}
+ .artisan_form{
+    width: 50%;
+    height: 600px;
+    margin-left: 300px;
+     background-color: #b371715d;
+    
+} 
+.artisan_form h1, .artisan_form_2 h1{
+    text-align: center;
+    color: #1F304C;
+    margin-top: 8px;
+    margin-bottom: 22px;
+}
+.artisan_form input, .artisan_form_2 input{
+    margin-left: 370px;
+    margin-top: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 330px;
+    border-radius: 10px;
+   
+}
+
+.banner5{
+    width: 80%;
+    height: 180px;
+    margin-left: 10%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    background-color: white;
+}
+.artisan_2{
+    height: 500px;
+}
+.artisan_form_2{
+    width: 50%;
+    height: 350px;
+    border-radius: 25px;
+    margin-left: 300px;
+     background-color: #b371715d;
+    
+}
+.artisan_form_2 input{
+    margin-top: 5%;
+}
+.artisan_form_2 .login_button, .artisan_form .register_button{
+    padding: 10px 150px;
+    font-size: 24px;
+    border-radius: 25px;
+    letter-spacing: 3px;
+    background-color: #1F304C;
+    color: white;
+}
+.artisan_form .register_button{
+    margin-left: 360px;
+}
+
+.artisan_list{
+    margin-bottom: 2%;
+}
+.artisan_list hr{
+    margin-left: 10%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    background: #E83E52;
+    height: 6px;
+}
+.artisan_list h2{
+    margin-left: 10%;
+    margin-bottom: 2%;
+    text-decoration: underline #E83E52;
+    color: #1F304C;
+}
+.artisan_list2 p{
+    margin-top: 1%;
+    color: #1F304C;
+}
+.artisan_list p{
+    margin-left: 10%;
+    margin-top: 1%;
+    color: #1F304C;
+}
+
+.logo_2{
+    margin-left: 10%;
+    margin-bottom: 1%;
+    background-color: white;
+    width: 120px;
+    height: 100px;
+}
+
+.logo_1{
+     margin-bottom: 1%;
+    background-color: white;
+    width: 120px;
+    height: 100px;
+    margin-left: 30%;
+}
+
+.alert ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.alert ul li {
+    border: 1px solid black;
+    margin-top: -1px;
+    background-color: red;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    position: relative;
+}
+
+.alert ul li:hover{
+    background-color: #E83E52;
+}
+.close{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0%, -50%);
+}
+.close:hover{
+    background-color: white;
+    color: #E83E52;
+}
+.alert_success ul{
+     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.alert_success ul li {
+    border: 1px solid black;
+    margin-top: -1px;
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    position: relative;
+}
+
+#img{
+    width: 100px;
+    height: 80px;
+    float: left;
+    margin-left: 47%;
+}
+.dashboard{
+    
+    margin-right: 630px;
+    margin-left: 600px;
+    text-align: center;
+}
