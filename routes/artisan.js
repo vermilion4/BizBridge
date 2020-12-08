@@ -183,5 +183,13 @@ router.get('/dashboard',ensureAuthenticated,function(req,res){
 
 })
 
+ //logout handle
+     router.get('/logout', (req,res)=>{
+         req.logOut();
+         req.flash('success_msg', 'you are logged out');
+         res.redirect('/artisan/login');
+     })
+   
+
 
 module.exports = router;
