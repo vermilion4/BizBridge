@@ -122,7 +122,6 @@ router.post('/register',upload.single('image'),(req,res)=>{
             password,
             password2,
             upload:{
-              // data:fs.readFileSync(path.join(__dirname+'/uploads/'+req.file.filename)),
               data: fs.readFileSync(path.join('uploads/'+req.file.filename)),
             contentType: 'image/png'
             }
