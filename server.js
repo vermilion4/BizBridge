@@ -52,8 +52,12 @@ app.use((req,res,next)=>{
 app.use('/', require('./routes/index'))
 app.use('/artisan', require('./routes/artisan'))
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8080;
+}
 
 
-app.listen(8080, ()=>{
+app.listen(port, ()=>{
     console.log('Server started on port 8080')
 })

@@ -1,3 +1,3 @@
 module.exports = {
-    uri : 'mongodb://127.0.0.1:27017/bizBridge'
+    uri : 'mongodb+srv://Vermilion4:1234@test-cluster.1r514.mongodb.net/bizbridge'
 }
