@@ -104,7 +104,8 @@ router.post('/register',upload.single('image'),(req,res)=>{
             password2
         }) 
        } else{
-             
+         
+        console.log(path)
            const newArtisan = new Artisan({
               cName,
             cNumber,
@@ -121,6 +122,7 @@ router.post('/register',upload.single('image'),(req,res)=>{
             password,
             password2,
             upload:{
+              // data:fs.readFileSync(path.join(__dirname+'/uploads/'+req.file.filename)),
               data:fs.readFileSync(path.join('C:/Users/Ndupu Adaeze/Desktop/bizbridge'+'/uploads/'+req.file.filename)),
               contentType: 'image/png'
             }
