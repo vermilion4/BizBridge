@@ -8,6 +8,23 @@ const express = require('express'),
         session = require('express-session'),
         passport = require('passport');
 
+var AWS = require('aws-sdk');
+var fs =  require('fs');
+
+var s3 = new AWS.S3();
+
+// Bucket names must be unique across all S3 users
+
+var myBucket =  encodeURIComponent('biz-bridge');
+
+var myKey =  encodeURIComponent('jpg');
+//for text file
+//fs.readFile('demo.txt', function (err, data) {
+//for Video file
+//fs.readFile('demo.avi', function (err, data) {
+//for image file				
+
+
 //passport config
 require('./config/passport')(passport);
 
@@ -23,8 +40,8 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
 app.use(express.static('public'));
-app.use(express.static('uploads'));
 app.set('view engine', 'ejs');
+
 
 //express session
 app.use(session({
