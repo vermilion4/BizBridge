@@ -40,10 +40,7 @@ router.post('/register',upload.single('image'),(req,res)=>{
     const { cName,cNumber,email,bName,industry,cacStatus,title,staffStrength,
             address,city,web,uname,password,password2 } = req.body;
 
-        var s3 = new AWS.S3();
-        var myBucket =  encodeURIComponent('biz-bridge');
-
-var myKey =  encodeURIComponent('jpg');
+       
     let errors = [];
 
      //check required fields
@@ -108,7 +105,7 @@ var myKey =  encodeURIComponent('jpg');
         }) 
        } else{
         
-        console.log(path)
+    
            const newArtisan = new Artisan({
               cName,
             cNumber,
@@ -126,7 +123,7 @@ var myKey =  encodeURIComponent('jpg');
             password2,
             upload:{
               // data:fs.readFileSync(path.join(__dirname+'/uploads/'+req.file.filename)),
-              data: fs.readFile(path.join('uploads/'+req.file.filename)),
+              data: fs.readFileSync(path.join('uploads/'+req.file.filename)),
             contentType: 'image/png'
             }
                 })
