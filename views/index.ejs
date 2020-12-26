@@ -6,19 +6,19 @@
             <div class="banner2">
                <form action="/" method="POST">
 
-                 <% let industry = ['AC Repair', 'Spa Services','Plumbers','Mechanics','Laundry','Information Technology','Beauty Salon','Home/Office Cleaning',
+                 <% let industry = ['All', 'AC Repair', 'Spa Services','Plumbers','Mechanics','Laundry','Information Technology','Beauty Salon','Home/Office Cleaning',
           'Catering Services','Event Management and Planning','General Merchandise'] %>
                     <select name="what">
-                        <option>Which service do you need?</option>
+                        <option value="All">Which service do you need?</option>
                         <% industry.forEach(function(industries){ %>
                        <option value="<%= industries %>"><%= industries %></option>>
                         <% }) %>
                         </select>
                   
-                          <% let location = ['Ikeja', 'Oke-ira','Lagos','Lekki','Epe','Ikorodu','Epe','Mushin',
+                          <% let location = ['All', 'Ikeja', 'Oke-ira','Lagos','Lekki','Epe','Ikorodu','Epe','Mushin',
           'Yaba','Ibadan','Surulere'] %>
                     <select name="where">
-                        <option>Where?</option>
+                        <option value='All'>Where?</option>
                         <% location.forEach(function(locations){ %>
                       <option value="<%= locations %>"><%= locations %></option>>
                         <% }) %> 

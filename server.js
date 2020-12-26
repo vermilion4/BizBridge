@@ -7,22 +7,7 @@ const express = require('express'),
         flash = require('connect-flash'),
         session = require('express-session'),
         passport = require('passport');
-
-var AWS = require('aws-sdk');
-var fs =  require('fs');
-
-var s3 = new AWS.S3();
-
-// Bucket names must be unique across all S3 users
-
-var myBucket =  encodeURIComponent('biz-bridge');
-
-var myKey =  encodeURIComponent('jpg');
-//for text file
-//fs.readFile('demo.txt', function (err, data) {
-//for Video file
-//fs.readFile('demo.avi', function (err, data) {
-//for image file				
+			
 
 
 //passport config
